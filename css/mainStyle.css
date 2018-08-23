@@ -13,7 +13,7 @@ body {
 	margin: 0;
 	font-family: Lato, sans-serif;
 	
-	background-image: url("noise.png");
+	background-image: url("../noise.png");
 	background-position: left-top;
 	background-size: cover;
 	background-attachment: fixed;
