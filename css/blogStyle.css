@@ -1,0 +1,35 @@
+/*
+-----
+Blog stylings
+-----
+*/
+
+.blogPost {
+	margin: auto;
+	width: 80%;
+	margin-bottom: 20px;
+	
+	padding: 20px;
+	
+	border: 2px solid #262626;
+	
+	box-shadow: 0 2px 5px black;
+}
+
+.blogTitle {
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.blogDate {
+	margin: 0;
+	font-size: 0.8em;
+}
+
+.blogPic {
+	width: 100%;
+	border: 2px solid black;
+	
+	box-sizing: border-box;
+}

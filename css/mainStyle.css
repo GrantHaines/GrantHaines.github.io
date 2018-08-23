@@ -1,0 +1,88 @@
+/*
+-----
+Basic body and html stuff
+-----
+*/
+
+html {
+	overflow-y: scroll;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Lato, sans-serif;
+	
+	background-image: url("noise.png");
+	background-position: left-top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*
+-----
+Navigation Bar
+-----
+*/
+
+#navBar {
+	background-color: dimGrey;
+	text-align: center;
+	
+	border-top: 2px solid #262626;
+	border-bottom: 2px solid #262626;
+}
+
+#navBarInset {
+	margin: auto;
+	width: 60%;
+	max-width: 800px;
+	box-sizing: border-box;
+}
+
+.navBarButton {
+	display: inline-block;
+	
+	/* Remove default link styling */
+	text-decoration: none;
+	color: white;
+	
+	text-shadow: 1px 1px 3px black;
+	font-size: 1.5em;
+	
+	padding: 10px;
+}
+
+.navBarButton:hover {
+	background-color: #262626;
+}
+
+#currentPage {
+	background-color: #262626;
+}
+
+/*
+-----
+Content box
+-----
+*/
+
+#content {
+	margin: auto;
+	width: 70%;
+	max-width: 1000px;
+	margin-bottom: 50px;
+	
+	background-color: #d9d9d9;
+	
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: 1.1em;
+	
+	border: 2px solid black;
+	border-top: 0;
+}
+
+#content p {
+	text-align: justify;
+}
