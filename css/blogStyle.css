@@ -4,16 +4,35 @@ Blog stylings
 -----
 */
 
-.blogPost {
-	margin: auto;
+#blogContainer {
+	flex: 75%;
+	background-color: #f2f2f2;
+	margin-right: 20px;
+}
+
+#blogSidebar {
+	flex: 25%;
+	background-color: #f2f2f2;
+}
+
+#blog {
+	display: flex;
+}
+
+#sidebarContent {
 	width: 80%;
-	margin-bottom: 20px;
-	
+	margin: 20px auto;
+}
+
+.blogPost {
+	margin: 20px;
 	padding: 20px;
 	
-	border: 2px solid #262626;
-	
-	box-shadow: 0 2px 5px black;
+	border-bottom: 1px solid black;
+}
+
+.blogPost:last-child {
+	border: 0;
 }
 
 .blogTitle {
@@ -32,4 +51,8 @@ Blog stylings
 	border: 2px solid black;
 	
 	box-sizing: border-box;
+}
+
+.sidebarHeader {
+	font-size: 1.2em;
 }
