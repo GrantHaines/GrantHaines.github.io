@@ -39,27 +39,32 @@ Navigation Bar
 	width: 100%;
 	max-width: 800px;
 	box-sizing: border-box;
+	height: 49px;
 }
 
 .navBarButton {
 	display: inline-block;
+	height: 49px;
+	box-sizing: border-box;
+	vertical-align: center;
+	
 	
 	/* Remove default link styling */
 	text-decoration: none;
 	color: white;
 	
 	text-shadow: 1px 1px 3px black;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	
 	padding: 10px;
+	
+	background-color: #4d4d4d;
+	box-shadow: 0 2px 3px #1a1a1a inset;
 }
 
-.navBarButton:hover {
+.navBarButton:hover, #currentPage {
 	background-color: #262626;
-}
-
-#currentPage {
-	background-color: #262626;
+	box-shadow: 0 3px 3px #4d4d4d inset;
 }
 
 /*
