@@ -12,6 +12,7 @@ html {
 body {
 	margin: 0;
 	font-family: Lato, sans-serif;
+	padding-top: 49px;
 }
 
 /*
@@ -24,14 +25,18 @@ Navigation Bar
 	background-color: dimGrey;
 	text-align: center;
 	
-	width: 70%;
+	width: 100%;
 	margin: auto;
-	max-width: 1000px;
+	
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
 }
 
 #navBarInset {
 	margin: auto;
-	width: 60%;
+	width: 100%;
 	max-width: 800px;
 	box-sizing: border-box;
 }
@@ -73,11 +78,22 @@ Content box
 	
 	box-sizing: border-box;
 	padding: 20px;
+	padding-top: 0;
 	font-size: 1.1em;
 }
 
 #content p {
 	text-align: justify;
+}
+
+#backdrop {
+	width: 100%;
+}
+
+#backdropHolder {
+	width: 70%;
+	margin: auto;
+	max-width: 1000px;
 }
 
 /*
