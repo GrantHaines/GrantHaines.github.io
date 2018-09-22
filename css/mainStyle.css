@@ -64,7 +64,6 @@ Navigation Bar
 
 .navBarButton:hover, #currentPage {
 	background-color: #262626;
-	box-shadow: 0 3px 3px #4d4d4d inset;
 }
 
 /*
@@ -96,9 +95,13 @@ Content box
 }
 
 #backdropHolder {
-	width: 70%;
+	width: 100%;
+	height: 200px;
 	margin: auto;
-	max-width: 1000px;
+	
+	background-image: url("../images/backdrop2.jpg");
+	background-position: center;
+	background-size: cover;
 }
 
 /*
