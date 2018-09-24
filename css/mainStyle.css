@@ -13,6 +13,9 @@ body {
 	margin: 0;
 	font-family: Lato, sans-serif;
 	padding-top: 49px;
+	background-image: linear-gradient(to right, #196666, white, #196666);
+	
+	min-height: 100%;
 }
 
 /*
@@ -22,10 +25,11 @@ Navigation Bar
 */
 
 #navBar {
-	background-color: dimGrey;
+	background-image: linear-gradient(to right, #196666, #28a4a4, #196666);
 	text-align: center;
 	
 	width: 100%;
+	height: 49px;
 	margin: auto;
 	
 	position: fixed;
@@ -44,7 +48,7 @@ Navigation Bar
 
 .navBarButton {
 	display: inline-block;
-	height: 49px;
+	height: 100%;
 	box-sizing: border-box;
 	vertical-align: center;
 	
@@ -57,13 +61,13 @@ Navigation Bar
 	font-size: 1.3em;
 	
 	padding: 10px;
-	
+	/*
 	background-color: #4d4d4d;
-	box-shadow: 0 2px 3px #1a1a1a inset;
+	box-shadow: 0 2px 3px #1a1a1a inset;*/
 }
 
 .navBarButton:hover, #currentPage {
-	background-color: #262626;
+	background-color: #32cdcd;
 }
 
 /*
@@ -76,18 +80,16 @@ Content box
 	margin: auto;
 	width: 85%;
 	max-width: 1000px;
-	margin-bottom: 50px;
+	height: 100%;
 	
 	background-color: white;
 	
 	box-sizing: border-box;
 	padding: 20px;
-	padding-top: 0;
+	padding-bottom: 0;
 	font-size: 1.1em;
-}
-
-#content p {
-	text-align: justify;
+	
+	margin-bottom: 20px;
 }
 
 #backdrop {
@@ -99,100 +101,30 @@ Content box
 	height: 150px;
 	margin: auto;
 	
-	background-image: url("../images/backdrop2.jpg");
+	background-image: url("../images/backdrop.jpg");
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-/*
------
-Slideshow
------
-*/
-
-.slideContainer {
-	width: 70%;
-	max-width: 1000px;
-	height: 300px;
-	position: relative;
-	margin: auto;
-	background-color: white;
+footer {
+	text-align: center;
+	font-size: 0.9em;
 	
-	font-size: 12pt;
+	border-top: 1px solid black;
+	padding: 20px;
 }
 
-.slides {
-	display: none;
-}
-
-.slides img {
-	display: block;
-	margin: 0 auto;
-	max-height: 300px;
-	
-	image-orientation: from-image;
-}
-
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: black;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-}
-
-.next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
-}
-
-.numberText {
-	color: black;
-	font-size: 12pt;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
+footer nav a {
 	display: inline-block;
-	transition: background-color 0.6s ease;
+	margin-right: 5px;
 }
 
-.active, .dot:hover {
-	background-color: #717171;
+footer nav a:last-child {
+	display: inline-block;
+	margin-right: 0;
 }
 
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
-
-@keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
+footer span {
+	font-size: 0.8em;
 }
