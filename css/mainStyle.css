@@ -7,13 +7,13 @@ Basic body and html stuff
 html {
 	overflow-y: scroll;
 	min-height: 100%;
+	background-image: linear-gradient(to right, #196666, white, #196666);
 }
 
 body {
 	margin: 0;
 	font-family: Lato, sans-serif;
 	padding-top: 49px;
-	background-image: linear-gradient(to right, #196666, white, #196666);
 	
 	min-height: 100%;
 }
@@ -61,9 +61,6 @@ Navigation Bar
 	font-size: 1.3em;
 	
 	padding: 10px;
-	/*
-	background-color: #4d4d4d;
-	box-shadow: 0 2px 3px #1a1a1a inset;*/
 }
 
 .navBarButton:hover, #currentPage {
@@ -81,15 +78,20 @@ Content box
 	width: 85%;
 	max-width: 1000px;
 	height: 100%;
+	margin-bottom: 0;
 	
-	background-color: white;
+	background-image: url("../images/content2.png");
+	background-position: bottom;
+	background-size: 100%;
 	
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 25px;
 	padding-bottom: 0;
 	font-size: 1.1em;
-	
-	margin-bottom: 20px;
+}
+
+#content h1 {
+	margin-top: 0;
 }
 
 #backdrop {
