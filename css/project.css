@@ -1,0 +1,42 @@
+@import "css/variables.css";
+
+#backLink {
+	text-align: center;
+}
+
+#backLink > a {
+	color: var(--main-contrast-color);
+	text-decoration-color: var(--main-contrast-color);
+
+	margin: auto;
+}
+
+.projectTitle {
+	max-width: var(--main-max-width);
+	margin: auto;
+
+	font-size: 2.5em;
+
+	text-align: center;
+	border-bottom: 2px solid white;
+}
+
+.image {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	border-radius: 10px;
+	border: 1px solid darkslategrey;
+
+	max-width: var(--main-max-width);
+
+	max-height: 350px;
+}
+
+.descriptionText {
+	max-width: var(--main-max-width);
+	margin: auto;
+	text-align: justify;
+}

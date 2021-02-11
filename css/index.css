@@ -1,0 +1,158 @@
+@import "css/variables.css";
+
+.aboutText {
+	max-width: var(--main-max-width);
+	margin: auto;
+	text-align: justify;
+}
+
+/*
+----------
+----------
+Project List
+----------
+----------
+*/
+
+.projectListTitle {
+	width: 100%;
+	text-align: center;
+}
+
+.projectList {
+	width: 100%;
+	max-width: 1300px;
+	margin: auto;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	color: white;
+}
+
+.projectItem {
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	border: 2px solid #1a1a1a;
+	border-radius: 10px;
+
+	position: relative;
+
+	display: inline-block;
+	margin: 5px;
+	vertical-align: top;
+
+	padding: 10px;
+	background-color: #222;
+
+	color: white;
+	text-decoration: none;
+
+	transition: 0.3s;
+}
+
+.projectItem:hover {
+	box-shadow: 0 0 10px 0 black;
+}
+
+.cardImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 250px;
+	height: 250px;
+
+	filter: brightness(30%);
+	transition: 0.3s;
+}
+
+.projectItem:hover .cardImage {
+	filter: brightness(15%);
+}
+
+.projectCard {
+	position: relative;
+	height: 100%;
+	z-index: 10;
+}
+
+.projectTitle {
+	font-weight: bold;
+
+	margin-top: 0;
+	padding-bottom: 5px;
+
+	border-bottom: 1px solid white;
+
+	text-shadow: 0 0 20px black;
+
+	color: rgb(238, 190, 0);
+}
+
+.projectDesc {
+	font-size: 0.85em;
+
+	text-shadow: 0 0 20px black;
+}
+
+.projectType {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	margin: 0;
+
+	font-size: 0.8em;
+	text-align: left;
+
+	text-shadow: 0 0 20px black;
+}
+
+.projectDate {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	margin: 0;
+
+	font-size: 0.8em;
+	text-align: right;
+
+	text-shadow: 0 0 20px black;
+}
+
+/*
+----------
+----------
+Skill list
+----------
+----------
+*/
+
+.skillTitle {
+	width: 100%;
+	text-align: center;
+}
+
+.skillItem {
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	text-align: justify;
+}
+
+.skillName {
+	color: rgb(238, 190, 0);
+
+	font-weight: bold;
+}

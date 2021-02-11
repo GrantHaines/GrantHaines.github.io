@@ -1,6 +1,0 @@
-Building A Website
-August 22, 2018
-Today I started working on my personal website. I've gotten a homepage with a short biography and some links to other websites I've made, along with this blog page that I am writing this on. Below this used to be (and may still be) a test post that I wrote to make sure it works. In a way, this is also a test post to see how it looks with multiple posts.
-Hopefully this personal website thing works out. I don't know if I will keep doing it as raw HTML/CSS like I am now, or move to a Content Management System like Wordpress. I like doing it manually because it tests my skills, and I personally enjoy doing it, but a CMS would probably look a lot better. If you are reading this in the future, of course, you already know what I chose to do. If I did it wrong, tell me so I can fix it, otherwise try not to break it. Here is a picture of the site for posterity, and to test images:
-<img class="blogPic" src="webPic1.png">
-That's it for now, got to go eat dinner. It might turn out that this website doesn't go anywhere after this, but maybe it will turn out ok.

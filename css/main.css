@@ -1,0 +1,176 @@
+@import "css/variables.css";
+
+html {
+	height: 100%;
+	overflow-y:scroll;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	
+	font-family: "Roboto Mono", Monospace;
+	background-color: rgb(51, 51, 51);
+	color: white;
+	
+	min-height: 100%;
+	position: relative;
+	top: 0;
+	
+	box-sizing: border-box;
+}
+
+#contentBox {
+	height: 100%;
+	padding: 10px;
+	width: 100%;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+/*
+----------
+----------
+Top Bar
+----------
+----------
+*/
+
+#topBox {
+	background-color: #222;
+	padding: 20px;
+}
+
+#title {
+	width: 100%;
+	margin: auto;
+}
+
+#name, #name2 {
+	text-align: center;
+	margin: 10px;
+}
+
+#name {
+	font-size: 2.5em;
+}
+
+/*
+----------
+----------
+Footer
+----------
+----------
+*/
+
+#bottomArea {
+	background-color: #222;
+	margin-top: 20px;
+	padding: 5px;
+	padding-bottom: 30px;
+	
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#bottomBar {
+	width: 100%;
+	margin: auto;
+}
+
+#bottomList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	
+	width: 100%;
+}
+
+.bottomListItem {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+}
+
+.bottomListItem p {
+	font-size: 0.9em;
+	text-align: left;
+}
+
+.bottomHeader {
+	padding: 5px;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+#bottomHeaderRight {
+	text-align: right;
+}
+
+#bottomHeaderCenter {
+	text-align: center;
+}
+
+.bottomSubList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+	
+	font-size: 0.9em;
+	text-align: left;
+}
+
+#bottomSubListRight {
+	text-align: right;
+}
+
+#bottomSubListCenter {
+	text-align: center;
+}
+
+.bottomSubListItem {
+	padding: 5px;
+}
+
+.bottomSubListItem a {
+	text-decoration: none;
+	color: #9999ff;
+}
+
+.bottomSubListItem a:hover {
+	color: #b3b3ff;
+}
+
+#footer {
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	
+	text-align: center;
+	
+	position: fixed;
+	bottom: 0;
+	
+	background-color: #1a1a1a;
+	color: #333333;
+	
+	padding: 2px;
+
+	z-index: 15;
+}
+
+/*
+----------
+----------
+Generic Templates
+----------
+----------
+*/
+
+.contrastColor {
+	color: var(--main-contrast-color);
+}

@@ -1,58 +1,169 @@
 <!DOCTYPE html>
+
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="author" content="Grant A. Haines">
-		<meta name="description" content="Grant Haines: Programmer Extraordinaire, Video Game Enthusiast, General All-Round Cool Dude">
-		<meta name="keywords" content="Grant Haines, Grant A. Haines, Computer Science">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Homepage | Grant Haines</title>
-		
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
-		
-		<meta property="og:image" content="http://www.motionspeaker.com/images/main.jpg"/>
-		<meta property="og:type" content="website"/>
-		<meta property="og:url" content="http://www.motionspeaker.com"/>
-		<meta property="og:title" content="MotionSpeaker.com"/>
-		<meta property="og:description" content="Motion-activated speakers with customizable sounds for many different uses."/>
-		
-		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
-		<link rel="stylesheet" type="text/css" href="css/homeStyle.css">
-	</head>
-	<body>
-		<nav id="navBar">
-			<div id="navBarInset">
-				<a class="navBarButton" id="currentPage" href="index.html">Home</a>
-				<a class="navBarButton" href="blog.html">About Me</a>
-				<a class="navBarButton" href="blog.html">Blog</a>
-				<a class="navBarButton" href="blog.html">Portfolio</a>
-			</div>
-		</nav>
-		<div id="backdropHolder"></div>
-		<div id="content">
-			<h1>Welcome</h1>
-			<p>Hello! My name is Grant Haines, and I am currently a second-year Computer Science student at Oregon State University. I have created this website to practice my web development skills and to serve as a platform for my career. Read below for a brief biography of myself, and go to my blog to read what I think about things.</p>
-			<h2>About Me</h2>
-			<p>I was born in April 1999 in Albuquerque, New Mexico, and spent the first 12 years of life living in New Mexico, most of which were spent in a small town named Tucumcari. In 2012, my family and I moved north to Hillsboro, Oregon, where I still live today. I was homeschooled through most of middle school and high school, but began taking classes at Portland Community College in the 11th grade. In 2017 I enrolled at Oregon State University to study Computer Science, in the Degree Partnership Program, which means I am still living in Hillsboro, taking about half my classes at PCC, and the other half online at OSU. I plan on moving to Corvallis to study at Oregon State full-time in 2019.</p>
-			<p>That's some of my personal history, but it doesn't really tell you a whole lot about who I am. Visually, I am about 6'2" tall, medium-length brown hair, brown eyes, almost-but-not-really skinny, bedecked with glasses, and typically wearing some combination of jeans and a t-shirt, though it doesn't take too much for me to dress up. I am a Christian, currently a member of the Sunset church of Christ in Hillsboro, Oregon, though I will probably begin attending somewhere else once I move down to Corvallis.</p>
-			<p>Once I finish with my degree, I intend on pursuing a career as a software developer, working "hands-on" with coding and learning the ins-and-outs of software development. I would like to enter MECOP (an engineering internship placement program) while at OSU, where I can gain some hard experience in the field before moving on to get my degree.</p>
-			<h2>Previous Work</h2>
-			<p>Here are some websites that I have created in the past:</p>
-			<ul>
-				<li><a target="_blank" href="http://www.sunsetchurchofchrist.net">Sunset church of Christ</a>
-				<li><a target="_blank" href="http://www.motionspeaker.com">MotionSpeaker.com</a>
-			</ul>
-			<footer>
-				<nav id="footerNavBar">
-					<div id="footerNavBarInset">
-						<a class="footerNavBarButton" id="footerCurrentPage" href="index.html">Homepage</a>
-						<a class="footerNavBarButton" href="blog.html">About Me</a>
-						<a class="footerNavBarButton" href="blog.html">Blog</a>
-						<a class="footerNavBarButton" href="blog.html">My Projects</a>
-					</div>
-				</nav>
-				<span>This website designed by Grant Haines</span>
-			</footer>
+
+<?php $thisPage="Home" ?>
+
+<head>
+	<title>Grant Haines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<div id="topBox">
+		<div id="title">
+			<h1 id="name">Grant Haines</h1>
+			<h2 id="name2">Software and Web Developer</h2>
 		</div>
-	</body>
+	</div>
+	<div id="contentBox">
+		<h1 class="projectListTitle">About Me</h1>
+		<p class="aboutText">Hi! I am a software and web developer based in Oregon currently studying Computer Science at Oregon State University. I have already had the pleasure of working on and creating a number of interesting projects and look forward to many more. Below this section, you can see some examples of my work, and at the bottom of the page you can find ways to contact me as well as links to my presence on other parts of the Internet.</p>
+		
+		<h1 class="projectListTitle">Current and Past Projects</h1>
+		<div class="projectList">
+			<a target="_blank" href="http://web.engr.oregonstate.edu/~hainesg/files/solar_system.zip" class="projectItem">
+				<img class="cardImage" src="images/cs450_project.png"></img>
+				<div class="projectCard">
+					<p class="projectTitle">OpenGL Solar System Model</p>
+					<p class="projectDesc">For my CS450 class (Introduction to Computer Graphics) I created a full-scale model of the Solar System.</p>
+					<p class="projectType">Software Development</p>
+					<p class="projectDate">Q4 2020</p>
+				</div>
+			</a>
+			<a target="_blank" href="http://www.sunsetchurchofchrist.net" class="projectItem">
+				<img class="cardImage" src="images/church.png"></img>
+				<div class="projectCard">
+					<p class="projectTitle">Sunset Church of Christ Website</p>
+					<p class="projectDesc">I developed and maintain the website for the Sunset Church of Christ in Hillsboro, OR.</p>
+					<p class="projectDesc">It is implemented using NodeJS, interfacing with a MySQL database.</p>
+					<p class="projectType">Web Development</p>
+					<p class="projectDate">2018-2020</p>
+				</div>
+			</a>
+			<a target="_blank" href="http://web.engr.oregonstate.edu/~hainesg/files/aeternitas.zip" class="projectItem">
+				<img class="cardImage" src="images/aeternitas.png"></img>
+				<div class="projectCard">
+					<p class="projectTitle">Aeternitas Station</p>
+					<p class="projectDesc">A science-fiction roguelike game I am currently developing, based in C# and using the SadConsole-GoRogue libraries. This version is an early working demo.</p>
+					<p class="projectType">Software Development</p>
+					<p class="projectDate">2020</p>
+				</div>
+			</a>
+			<a href="http://web.engr.oregonstate.edu/~hainesg/" class="projectItem">
+				<img class="cardImage" src="images/site1.png"></img>
+				<div class="projectCard">
+					<p class="projectTitle">Personal Website</p>
+					<p class="projectDesc">This website! It was created entirely from scratch using PHP, HTML, CSS, and JS.</p>
+					<p class="projectType">Web Development</p>
+					<p class="projectDate">2019-2020</p>
+				</div>
+			</a>
+			<a target="_blank" href="http://www.oakstchurch.com" class="projectItem">
+				<img class="cardImage" src="images/church2.png"></img>
+				<div class="projectCard">
+					<p class="projectTitle">Oak Street Church of Christ Website</p>
+					<p class="projectDesc">A simple static website I created for the Oak Street Church of Christ in Albany, OR.</p>
+					<p class="projectType">Web Development</p>
+					<p class="projectDate">Q4 2019</p>
+				</div>
+			</a>
+			<a target="_blank" href="http://web.engr.oregonstate.edu/~hainesg/files/smallshell.zip" class="projectItem">
+				<img class="cardImage" src="images/smallshell.png"></img>
+				<div class="projectCard">
+					<p class="projectTitle">Small Shell</p>
+					<p class="projectDesc">For my CS344 (Operating Systems) course I created a simple command-line shell that handled user input, could access the file system, and launch programs in both foreground and background modes.</p>
+					<p class="projectType">Software Development</p>
+					<p class="projectDate">Q1 2020</p>
+				</div>
+			</a>
+			<a target="_blank" href="http://web.engr.oregonstate.edu/~hainesg/files/FPGA.zip" class="projectItem">
+				<img class="cardImage" src="images/fpga.jpg"></img>
+				<div class="projectCard">
+					<p class="projectTitle">FPGA Design Project</p>
+					<p class="projectDesc">A three-person design project from my ECE271 (Digital Logic Design) course. An FPGA is connected to multiple input and output devices.</p>
+					<p class="projectDesc">Documentation is included in a LaTeX file, with diagrams and hardware simulations.</p>
+					<p class="projectType">Hardware Design</p>
+					<p class="projectDate">Q4 2019</p>
+				</div>
+			</a>
+			<a target="_blank" href="http://web.engr.oregonstate.edu/~hainesg/files/game.zip" class="projectItem">
+				<img class="cardImage" src="images/game.png"></img>
+				<div class="projectCard">
+					<p class="projectTitle">Spaceship Escape</p>
+					<p class="projectDesc">A text-based science fiction adventure game I created for my CS162 course. Includes executable and source code.</p>
+					<p class="projectType">Software Development</p>
+					<p class="projectDate">Q4 2017</p>
+				</div>
+			</a>
+			<a target="_blank" href="http://web.engr.oregonstate.edu/~hainesg/files/LAaCG.zip" class="projectItem">
+				<img class="cardImage" src="images/mth261.png"></img>
+				<div class="projectCard">
+					<p class="projectTitle">Linear Algebra and Computer Graphics</p>
+					<p class="projectDesc">A paper about the basic applications of linear algebra to 2D and 3D computer graphics. Also included is the slideshow for the accompanying presentation.</p>
+					<p class="projectType">Writing</p>
+					<p class="projectDate">Q2 2019</p>
+				</div>
+			</a>
+			<a target="_blank" href="https://truthfactor.com" class="projectItem">
+				<img class="cardImage" src="images/tf.jpg"></img>
+				<div class="projectCard">
+					<p class="projectTitle">Truth Factor Live Podcast</p>
+					<p class="projectDesc">I created and manage the podcast format of a weekly online Bible study. Currently on hiatus.</p>
+					<p class="projectType">Other</p>
+					<p class="projectDate">2018-2020</p>
+				</div>
+			</a>
+		</div>
+
+		<h1 class="projectListTitle">Skills</h1>
+		<p class="aboutText">I have experience with a number of programming languages and styles, as well as with various types of hardware and software.</p>
+
+		<h2 class="skillTitle"></h2>
+
+		<h2 class="skillTitle">Collaborative Tools</h2>
+		<p class="skillItem"><span class="skillName">>Git/GitHub</span> I have used Git and GitHub for many projects, both individually and with a group. I am familiar with forking, branches, and tags/releases.</p>
+		<p class="skillItem"><span class="skillName">>Kanban</span> During a group project in my CS361 (Software Engineering I) course, we used Kanban board software to manage our tasks and track our group's progress. While I do not think we used it to it's full potential, with only 4 people, I did learn a great deal about project management in the process.</p>
+		<p class="skillItem"><span class="skillName">>Agile</span> Most of my group projects have used the Agile development method to some extent, including my ongoing senior capstone project.</p>
+
+		<h2 class="skillTitle">Programming Languages</h2>
+		<p class="skillItem"><span class="skillName">>C/C++</span> Most of my early programming experience was in C and C++, and I have continued to use it since for numerous programming projects and assignments of varying scale. Notably, these include the small shell and spaceship escape game listed in my projects above.</p>
+		<p class="skillItem"><span class="skillName">>C#</span> I learned C# in the course of working on the Aeternitas Station game project mentioned above. Although that is the only work I have done with it, the project was substantial in size and it is similar enough to C and C++ that I feel very confident with it.</p>
+		<p class="skillItem"><span class="skillName">>Python</span> I have used Python in the creation of a large number of smaller scripts, especially for statistical analysis, but have not created any sizable programs with it.</p>
+		<p class="skillItem"><span class="skillName">>JavaScript</span> My experience in JavaScript is limited mainly to web development, either with the NodeJS framework or for client-side web page interaction.</p>
+		<p class="skillItem"><span class="skillName">>Java</span> I have used Java in a couple of smaller projects and have a general knowledge, but am not intimately familiar with it.</p>
+		<p class="skillItem"><span class="skillName">>Assembly </span> I have some experience programming with basic assembly language on an AVR Microcontroller, and have studied the syntax of AT&T x86 assembly.</p>
+		<p class="skillItem"><span class="skillName">>Haskell </span> I have spent some time learning the basic concepts of Haskell and functional programming in general, but most of my experience in using it is with small demo programs.</p>
+		<p class="skillItem"><span class="skillName">>Prolog </span> Like Haskell, I have studied the basic concepts of Prolog and logical programming languages, but do not have extensive experience with using it in practice.</p>
+
+		<h2 class="skillTitle">Hardware and Software</h2>
+		<p class="skillItem"><span class="skillName">>MySQL </span> I have a great deal of experience using MySQL in relation to web development. I have created multiple websites for university courses as well as the Sunset Church of Christ website listed above using MySQL databases.</p>
+		<p class="skillItem"><span class="skillName">>FPGA's</span> I have a small amount of experience programming a Field Programmable Gate Array (the DE10-Lite) using schematic design and SystemVerilog (a hardware description language), implementing both combinational and sequential logic. In my projects listed above, you can find a design project I participated in using an FPGA.</p>
+		<!--<p class="skillItem"><span class="skillName">>AVR Microcontrollers</span> </p>-->
+		<p class="skillItem"><span class="skillName">>IDE's</span> I have used numerous IDE's, editors, and compilers, including Visual Studio, Visual Studio Code, NotePad++, MinGW (C/C++ compiler), IntelliJ Idea, Eclipse, and Codeblocks.</p>
+		<p class="skillItem"><span class="skillName">>Unix</span> The engineering servers at OSU, which I have used for almost all of my Computer Science courses, run on Unix. I am familiar with navigating and using the Unix file system, including Bash scripting. I have also programmed on Unix using Vim, though I mostly prefer an IDE as listed just above.</p>
+	</div>
+	<div id="bottomArea">
+		<ul id="bottomList">
+			<li class="bottomListItem">
+				<div class="bottomHeader">Contact Info</div>
+				<ul class="bottomSubList">
+					<li class="bottomSubListItem"><a href="mailto:granthaines33@gmail.com">granthaines33@gmail.com</a></li>
+				</ul>
+			</li>
+			<li class="bottomListItem">
+				<div class="bottomHeader" id="bottomHeaderCenter">Links</div>
+				<ul class="bottomSubList" id="bottomSubListCenter">
+					<li class="bottomSubListItem"><a href="https://github.com/GrantHaines">GitHub</a></li>
+					<li class="bottomSubListItem"><a href="https://www.linkedin.com/in/grant-haines/">LinkedIn</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+
 </html>
+<script>
+</script>
