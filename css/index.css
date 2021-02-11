@@ -1,4 +1,4 @@
-@import "css/variables.css";
+@import "/css/variables.css";
 
 .aboutText {
 	max-width: var(--main-max-width);
