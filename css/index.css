@@ -1,9 +1,27 @@
-@import "/css/variables.css";
+@import "variables.css";
+
+.sectionBox {
+	display: flex;
+}
+
+.sectionSubBox {
+	margin: 10px;
+	width: 100%;
+}
+
+/*
+----------
+----------
+About Section
+----------
+----------
+*/
 
 .aboutText {
-	max-width: var(--main-max-width);
+	max-width: 1000px;
 	margin: auto;
-	text-align: justify;
+	text-align: left;
+	margin-bottom: 16px;
 }
 
 /*
@@ -14,6 +32,12 @@ Project List
 ----------
 */
 
+.sectionDesc {
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 16px;
+}
+
 .projectListTitle {
 	width: 100%;
 	text-align: center;
@@ -21,7 +45,6 @@ Project List
 
 .projectList {
 	width: 100%;
-	max-width: 1300px;
 	margin: auto;
 	
 	display: flex;
@@ -33,8 +56,8 @@ Project List
 }
 
 .projectItem {
-	width: 250px;
-	height: 250px;
+	width: var(--project-item-size);
+	height: var(--project-item-size);
 	overflow: hidden;
 	box-sizing: border-box;
 
@@ -65,8 +88,8 @@ Project List
 	top: 0;
 	left: 0;
 
-	width: 250px;
-	height: 250px;
+	width: var(--project-item-size);
+	height: var(--project-item-size);
 
 	filter: brightness(30%);
 	transition: 0.3s;
@@ -84,6 +107,7 @@ Project List
 
 .projectTitle {
 	font-weight: bold;
+	font-size: 1.15em;
 
 	margin-top: 0;
 	padding-bottom: 5px;
@@ -92,7 +116,7 @@ Project List
 
 	text-shadow: 0 0 20px black;
 
-	color: rgb(238, 190, 0);
+	color: var(--main-contrast-color);
 }
 
 .projectDesc {
@@ -104,7 +128,7 @@ Project List
 .projectType {
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	right: 0;
 
 	margin: 0;
 
@@ -114,14 +138,29 @@ Project List
 	text-shadow: 0 0 20px black;
 }
 
-.projectDate {
+.projectInfoIcon {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 
+	width: 24px;
+	height: 24px;
+
 	margin: 0;
 
-	font-size: 0.8em;
+	text-align: left;
+
+	text-shadow: 0 0 20px black;
+}
+
+.projectDate {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	margin: 0;
+
+	font-size: 0.85em;
 	text-align: right;
 
 	text-shadow: 0 0 20px black;
@@ -141,18 +180,18 @@ Skill list
 }
 
 .skillItem {
-	width: 80%;
-	max-width: 800px;
+	width: 100%;
+	max-width: 1000px;
 	margin: auto;
 	
 	margin-top: 10px;
 	margin-bottom: 10px;
 	
-	text-align: justify;
+	text-align: left;
 }
 
 .skillName {
-	color: rgb(238, 190, 0);
+	color: var(--main-contrast-color);
 
 	font-weight: bold;
 }

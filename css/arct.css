@@ -1,0 +1,14 @@
+
+
+.arctImage {
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 800px;
+}
+
+.imgCaption {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}

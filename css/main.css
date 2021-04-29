@@ -9,8 +9,8 @@ body {
 	padding: 0;
 	margin: 0;
 	
-	font-family: "Roboto Mono", Monospace;
-	background-color: rgb(51, 51, 51);
+	font-family: "Consolas", Monospace;
+	background-color: #222;
 	color: white;
 	
 	min-height: 100%;
@@ -20,12 +20,23 @@ body {
 	box-sizing: border-box;
 }
 
+#contentContainer {
+	background-color: rgb(51, 51, 51);
+	width: 100%;
+}
+
 #contentBox {
 	height: 100%;
-	padding: 10px;
 	width: 100%;
+	max-width: 1400px;
 	margin: auto;
 	box-sizing: border-box;
+
+	padding: 50px;
+	padding-top: 1px;
+	padding-bottom: 20px;
+
+	background-color: rgb(61, 61, 61);
 }
 
 /*
@@ -55,6 +66,10 @@ Top Bar
 	font-size: 2.5em;
 }
 
+#name2 {
+	font-weight: normal;
+}
+
 /*
 ----------
 ----------
@@ -65,7 +80,7 @@ Footer
 
 #bottomArea {
 	background-color: #222;
-	margin-top: 20px;
+	margin-top: 0;
 	padding: 5px;
 	padding-bottom: 30px;
 	
@@ -171,6 +186,31 @@ Generic Templates
 ----------
 */
 
+.centered {
+	text-align: center;
+}
+
+.longText {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+}
+
+.longTextHeader {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+}
+
 .contrastColor {
 	color: var(--main-contrast-color);
+}
+
+.link {
+	text-decoration: underline;
+	color: #b3b3ff;
+}
+
+.link:hover {
+	color: #dbdbff;
 }

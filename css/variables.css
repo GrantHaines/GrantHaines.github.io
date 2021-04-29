@@ -1,4 +1,6 @@
 html {
-	--main-contrast-color: rgb(238, 190, 0);
+	--main-contrast-color: rgb(255, 204, 0);
 	--main-max-width: 1200px;
+
+	--project-item-size: 260px;
 }
